@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$fuentePrincipal: 'Poppins', sans-serif;
+$fuenteSecundaria: 'Montserrat', sans-serif;
+$negro: #241E20;
+$blanco: #fcfcfc;
+$naranjaLinear: linear-gradient(90deg, #ca3225 0%, #dc5542 49.85%, #d0539B 100%);
+$naranja: #ca3225;
+
+//ESTILOS GENERALES
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+    //Padding de main para fixed navbar y wpp item
+    padding-top: 6.25rem;
+    padding-bottom: 5rem;   
+    //Background image
+    background-image: url("../img/background.jpg");
+    background-color: $negro;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+//Padding para el resto de las secciones - fixed navbar
+@media(min-width: 768px){
+    .seccion{
+        padding-top: 10rem !important; 
+    }
+}
+
+.fondo--negro{
+    background-color: $negro;
+}
+
+.color--blanco{
+    color: $blanco;
+}
+
+.color--naranja{
+    color: $naranja;
+}
+
+.fuenteTitulos{
+    font-family: $fuentePrincipal;
+    color: $blanco;
+}
+
+.fuenteTexto{
+    font-family: $fuenteSecundaria;
+    color: $blanco;
+}
+
+.link{
+    text-decoration: underline;
+}
+.link:hover{
+    color: $blanco;
+    cursor: pointer;
+}
+
+//Toggle left navbar for small screens
+@media(max-width: 768px){
+    .showToggle{
+        display: none !important;
+    }
+}
+
+//NAVBAR
+.nav-link:hover{
+    color: $blanco;
+    text-decoration: underline;
+}
+
+@media(min-width: 1440px){
+    .nav__logo{
+        padding-left: 7rem;
+    }
+}
+
+//LEFT Navbar
+.left-navbar{
+    font-size: 2rem;
+}
+
+.leftLink{
+    color: inherit;
+}
+.leftLink:hover{
+    transition: all 150ms ease-in;
+    transform: scale(1.5); 
+}
+
+//Footer
+.borde--derecho{
+    border-right: 1px solid $blanco;
+}
+
+.footerLink{
+    color: inherit;
+}
+.footerLink:hover{
+    color: $blanco; 
+}
+@media(max-width: 425px){
+    .footer__ddDiv{
+        display: none;  
+    }
+}
+@media(max-width: 768px){
+    .footer_contact_img{
+        display: none;
+    }
+    .footer_derechos{
+        order: 2;
+    }
+    .footer_dd{
+        padding-left: 1rem !important;
+    }
+}
+@media(min-width: 768px){
+    .footer__ddDiv--alternative{
+        display: none;
+    }
+}
+@media(min-width: 1024px){
+    .footer_dd{
+        text-align: right;
+    }
+    .footer_creators{
+        padding-left: 1.5rem;
+    }
+}
+
+//INICIO SUMATE
+//Boton
+.button__styled{
+    font-family: $fuentePrincipal;
+    color: $blanco;
+    background: $naranjaLinear;
+    border-radius: 100px;
+    border: 0px;
+    position: absolute;
+}
+@media(max-width: 768px){
+    .button__styled{
+        display: none;
+    }
+}
+@media(min-width: 1024px){
+    .button__styled{
+        margin-top: 22rem;
+        margin-left: -35rem;
+    }
+}
+@media(min-width: 1440px){
+    .button__styled{
+        margin-top: 34rem;
+        margin-left: -50rem;
+    }
+}
+@media(min-width: 2056px){
+    .button__styled{
+        margin-top: 34rem;
+        margin-left: -50rem;
+    }
+}
+
+//NOSOTROS
+@media(min-width: 1024px){
+    .nosotros_parrafo{
+        text-align: right;
+    }
+    .nosotros_photo-uno{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+@media(max-width: 768px){
+    .nosotros_photo-uno{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nosotros_photo-dos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media(max-width: 425px){
+    .nosotros_pDiv{
+        text-align: center;
+    }
+}
+
+//EXPERIENCIAS
+.barraRegular{
+    background-image: url("../img/fondoBarraRegular.png");
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 497px;
+    transition: 0.4s ease-out;
+
+    .barra__ul{
+        padding-top: 50px;
+        visibility: hidden;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 90px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraRegular:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.barraRegularOnHover{
+    background-color: $naranja;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 498px;
+
+    .barra__ul{
+        padding-top: 50px;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 90px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraRegularOnHover:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.barraPremium{
+    background-image: url("../img/fondoBarraPremium.png");
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 498px;
+    transition: 0.4s ease-out;
+
+    .barra__ul{
+        padding-top: 50px;
+        visibility: hidden;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 45px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraPremium:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.barraPremiumOnHover{
+    background-color: $naranja;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 498px;
+
+    .barra__ul{
+        padding-top: 50px;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 45px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraPremiumOnHover:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.barraExclusiva{
+    background-image: url("../img/fondoBarraExclusiva.png");
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 498px;
+    transition: 0.4s ease-out;
+
+    .barra__ul{
+        padding-top: 50px;
+        visibility: hidden;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 70px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraExclusiva:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.barraExclusivaOnHover{
+    background-color: $naranja;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 511px;
+    min-height: 498px;
+
+    .barra__ul{
+        padding-top: 50px;
+    }
+
+    .bottomCardExperiencias{
+        margin-top: 70px;
+        margin-left: 240px;
+    }
+    .bottomCardExperiencias:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.barraExclusivaOnHover:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+//WHATSAPP
+.whatsapp{
+    margin-bottom: 10rem;
+    padding-right: 1rem;
+}
+
+
+//Arreglos Version tablet y mobile
+@media(max-width: 768px){
+    // - Sacar logo wpp
+    .wp{
+        display: none;
+    }
+    // - Sacar contact photo
+    .contact_photo{
+        display: none;
+    }
+    .contact_details{
+        margin-left: 1rem;
+    }
+}
