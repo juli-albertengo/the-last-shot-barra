@@ -20,15 +20,12 @@ main{
     //Background image
     background-image: url("../img/background.jpg");
     background-color: $negro;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 //Padding para el resto de las secciones - fixed navbar
-@media(min-width: 768px){
-    .seccion{
-        padding-top: 10rem !important; 
-    }
+.seccion{
+    padding-top: 10rem !important; 
 }
 
 .fondo--negro{
@@ -100,9 +97,11 @@ main{
 
 .footerLink{
     color: inherit;
+    text-decoration: underline;
 }
 .footerLink:hover{
     color: $blanco; 
+    text-decoration: underline;
 }
 @media(max-width: 425px){
     .footer__ddDiv{
@@ -266,7 +265,7 @@ main{
     }
 
     .bottomCardExperiencias{
-        margin-top: 45px;
+        margin-top: 90px;
         margin-left: 240px;
     }
     .bottomCardExperiencias:hover{
@@ -292,7 +291,7 @@ main{
     }
 
     .bottomCardExperiencias{
-        margin-top: 45px;
+        margin-top: 90px;
         margin-left: 240px;
     }
     .bottomCardExperiencias:hover{
@@ -320,7 +319,7 @@ main{
     }
 
     .bottomCardExperiencias{
-        margin-top: 70px;
+        margin-top: 90px;
         margin-left: 240px;
     }
     .bottomCardExperiencias:hover{
@@ -346,7 +345,7 @@ main{
     }
 
     .bottomCardExperiencias{
-        margin-top: 70px;
+        margin-top: 90px;
         margin-left: 240px;
     }
     .bottomCardExperiencias:hover{
@@ -362,7 +361,7 @@ main{
 
 //WHATSAPP
 .whatsapp{
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     padding-right: 1rem;
 }
 

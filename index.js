@@ -125,9 +125,17 @@ infoRegular.addEventListener('click', function(){
     barraRegular.className = 'barraRegularOnHover rounded mx-auto'
 })
 
-barraRegular.addEventListener('mouseleave', function(){
-    barraRegular.className= 'barraRegular rounded mx-auto'
-})
+if(window.innerWidth > 768){
+    barraRegular.addEventListener('mouseleave', function(){
+        setTimeout(function(){
+            barraRegular.className = 'barraRegular rounded mx-auto'
+        }, 2000)
+    })
+} else if(window.innerWidth < 768) {
+    barraRegular.addEventListener('mouseleave', function(){
+        barraRegular.className = 'barraRegular rounded mx-auto'
+    })
+}
 
 const infoPremium = document.querySelector('.infoPremium');
 const barraPremium = document.querySelector('.barraPremium')
@@ -135,9 +143,17 @@ infoPremium.addEventListener('click', function(){
     barraPremium.className = 'barraPremiumOnHover rounded mx-auto';
 })
 
-barraPremium.addEventListener('mouseleave', function(){
-    barraPremium.className= 'barraPremium rounded mx-auto'
-})
+if(window.innerWidth > 768){
+    barraPremium.addEventListener('mouseleave', function(){
+        setTimeout(function(){
+            barraPremium.className = 'barraRegular rounded mx-auto'
+        }, 2000)
+    })
+} else if(window.innerWidth < 768) {
+    barraPremium.addEventListener('mouseleave', function(){
+        barraPremium.className = 'barraRegular rounded mx-auto'
+    })
+}
 
 const infoExclusiva = document.querySelector('.infoExclusiva');
 const barraExclusiva = document.querySelector('.barraExclusiva');
@@ -145,6 +161,19 @@ infoExclusiva.addEventListener('click', function(){
     barraExclusiva.className = 'barraExclusivaOnHover rounded mx-auto';
 })
 
-barraExclusiva.addEventListener('mouseleave', function(){
-    barraExclusiva.className= 'barraExclusiva rounded mx-auto'
+if(window.innerWidth > 768){
+    barraExclusiva.addEventListener('mouseleave', function(){
+        setTimeout(function(){
+            barraExclusiva.className = 'barraRegular rounded mx-auto'
+        }, 2000)
+    })
+} else if(window.innerWidth < 768) {
+    barraExclusiva.addEventListener('mouseleave', function(){
+        barraExclusiva.className = 'barraRegular rounded mx-auto'
+    })
+}
+
+/*Arreglo Navbar */
+$(document).on('click',function(){
+    $('.collapse').collapse('hide');
 })
