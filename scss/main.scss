@@ -26,7 +26,27 @@ main{
 
 //Padding para el resto de las secciones - fixed navbar
 .seccion{
-    padding-top: 10rem !important; 
+    padding-top: 10rem !important;
+}
+//Altura para cada seccion
+@media(min-width: 1200px){
+    .imgPrincipal, .contactPhoto{
+        height: 50vh;
+    }
+    
+    .carousel-item, .carousel-foto{
+        height: 40vh;
+    }
+    
+    .carousel-foto, .contactPhoto{
+        object-fit: contain;
+    }
+    .parrafosNosotros{
+        height: 20vh;
+    }
+    .contactRow{
+        height: 10vh;
+    }
 }
 
 .fondo--negro{
@@ -162,19 +182,19 @@ main{
 }
 @media(min-width: 1024px){
     .button__styled{
-        margin-top: 22rem;
+        margin-top: 40vh;
         margin-left: -35rem;
     }
 }
 @media(min-width: 1440px){
     .button__styled{
-        margin-top: 30rem;
+        margin-top: 40vh;
         margin-left: -50rem;
     }
 }
 @media(min-width: 2056px){
     .button__styled{
-        margin-top: 34rem;
+        margin-top: 40vh;
         margin-left: -50rem;
     }
 }
