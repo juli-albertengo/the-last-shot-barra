@@ -38,7 +38,7 @@ main {
   color: #fcfcfc;
   cursor: pointer; }
 
-@media (max-width: 1340px) {
+@media (max-width: 1200px) {
   .showToggle {
     display: none !important; } }
 
@@ -278,7 +278,7 @@ main {
   margin-bottom: 120px;
   padding-right: 1rem; }
 
-@media (max-width: 1340px) {
+@media (max-width: 1200px) {
   .wp {
     display: none; }
   .contact_photo {
