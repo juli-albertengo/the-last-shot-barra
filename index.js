@@ -197,7 +197,7 @@ $(document).scroll(function scrollSimulatorWpp(){
     if(window.scrollY < ($("#contacto").offset().top) - (window.innerHeight / 1.5)){
         wpp.className = 'whatsapp-scrollTop fixed-bottom d-inline-flex';
     }
-    if(window.scrollY > ($("#contacto").offset().top) - (window.innerHeight / 1.5)){
+    if(window.scrollY > ($("#experiencias").offset().top) - (window.innerHeight / 1.5)){
         wpp.className = 'whatsapp-scrollBottom fixed-bottom d-inline-flex';
     }
 })
