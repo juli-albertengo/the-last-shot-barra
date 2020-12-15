@@ -7,6 +7,7 @@ main {
   padding-top: 6.25rem;
   padding-bottom: 5rem;
   background-image: url("../img/background.jpg");
+  background-size: cover;
   background-color: #241E20;
   background-attachment: fixed; }
 
@@ -37,7 +38,7 @@ main {
   color: #fcfcfc;
   cursor: pointer; }
 
-@media (max-width: 768px) {
+@media (max-width: 1340px) {
   .showToggle {
     display: none !important; } }
 
@@ -45,9 +46,9 @@ main {
   color: #fcfcfc;
   text-decoration: underline; }
 
-@media (min-width: 1440px) {
-  .nav__logo {
-    padding-left: 7rem; } }
+@media (max-width: 768px) {
+  #nosotros_link {
+    padding-top: 20px; } }
 
 .left-navbar {
   font-size: 2rem; }
@@ -58,6 +59,9 @@ main {
 .leftLink:hover {
   transition: all 150ms ease-in;
   transform: scale(1.5); }
+
+#leftNavContainerSumate, #leftNavContainerNosotros, #leftNavContainerExperiencias, #leftNavContainerGaleria, #leftNavContainerContacto {
+  height: 60vh; }
 
 .borde--derecho {
   border-right: 1px solid #fcfcfc; }
@@ -80,7 +84,9 @@ main {
   .footer_derechos {
     order: 2; }
   .footer_dd {
-    padding-left: 1rem !important; } }
+    padding-left: 1rem !important; }
+  #derechos_p {
+    padding-bottom: 20px; } }
 
 @media (min-width: 768px) {
   .footer__ddDiv--alternative {
@@ -91,6 +97,9 @@ main {
     text-align: right; }
   .footer_creators {
     padding-left: 1.5rem; } }
+
+.imgPrincipal {
+  object-fit: cover; }
 
 .button__styled {
   font-family: "Poppins", sans-serif;
@@ -111,7 +120,7 @@ main {
 
 @media (min-width: 1440px) {
   .button__styled {
-    margin-top: 34rem;
+    margin-top: 30rem;
     margin-left: -50rem; } }
 
 @media (min-width: 2056px) {
@@ -119,7 +128,7 @@ main {
     margin-top: 34rem;
     margin-left: -50rem; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1340px) {
   .nosotros_parrafo {
     text-align: right; }
   .nosotros_photo-uno {
@@ -127,7 +136,7 @@ main {
     flex-direction: row;
     justify-content: flex-end; } }
 
-@media (max-width: 768px) {
+@media (max-width: 1340px) {
   .nosotros_photo-uno {
     display: flex;
     flex-direction: row;
@@ -261,11 +270,15 @@ main {
   transform: translateY(-20px);
   transition: 0.4s ease-out; }
 
-.whatsapp {
-  margin-bottom: 8rem;
+.whatsapp-scrollTop {
+  margin-bottom: 35px;
   padding-right: 1rem; }
 
-@media (max-width: 768px) {
+.whatsapp-scrollBottom {
+  margin-bottom: 120px;
+  padding-right: 1rem; }
+
+@media (max-width: 1340px) {
   .wp {
     display: none; }
   .contact_photo {
