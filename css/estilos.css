@@ -5,14 +5,14 @@ html {
 
 main {
   padding-top: 6.25rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-color: #241E20;
   background-attachment: fixed; }
 
 .seccion {
-  padding-top: 10rem !important; }
+  padding-top: 8rem !important; }
 
 @media (min-width: 1200px) {
   .imgPrincipal, .contactPhoto {
@@ -119,25 +119,24 @@ main {
   background: linear-gradient(90deg, #ca3225 0%, #dc5542 49.85%, #d0539B 100%);
   border-radius: 100px;
   border: 0px;
-  position: absolute; }
+  position: absolute;
+  margin-top: 50vh; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .button__styled {
     display: none; } }
 
 @media (min-width: 1024px) {
   .button__styled {
-    margin-top: 40vh;
-    margin-left: -35rem; } }
+    margin-right: 45rem; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .button__styled {
     margin-top: 40vh;
-    margin-left: -50rem; } }
+    margin-right: 40rem; } }
 
 @media (min-width: 2056px) {
   .button__styled {
-    margin-top: 40vh;
     margin-left: -50rem; } }
 
 @media (min-width: 1340px) {
@@ -163,19 +162,18 @@ main {
     text-align: center; } }
 
 .barraRegular {
-  background-image: url("../img/fondoBarraRegular.png");
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 497px;
+  background-image: url("../img/tarjetaExp1.png");
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px;
   transition: 0.4s ease-out;
   z-index: 2; }
   .barraRegular .barra__ul {
-    padding-top: 50px;
     visibility: hidden; }
   .barraRegular .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraRegular .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -186,15 +184,13 @@ main {
 
 .barraRegularOnHover {
   background-color: #ca3225;
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 498px; }
-  .barraRegularOnHover .barra__ul {
-    padding-top: 50px; }
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px; }
   .barraRegularOnHover .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraRegularOnHover .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -204,18 +200,17 @@ main {
   transition: 0.4s ease-out; }
 
 .barraPremium {
-  background-image: url("../img/fondoBarraPremium.png");
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 498px;
+  background-image: url("../img/tarjetaExp2.png");
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px;
   transition: 0.4s ease-out; }
   .barraPremium .barra__ul {
-    padding-top: 50px;
     visibility: hidden; }
   .barraPremium .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraPremium .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -226,15 +221,13 @@ main {
 
 .barraPremiumOnHover {
   background-color: #ca3225;
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 498px; }
-  .barraPremiumOnHover .barra__ul {
-    padding-top: 50px; }
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px; }
   .barraPremiumOnHover .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraPremiumOnHover .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -244,18 +237,17 @@ main {
   transition: 0.4s ease-out; }
 
 .barraExclusiva {
-  background-image: url("../img/fondoBarraExclusiva.png");
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 498px;
+  background-image: url("../img/tarjetaExp3.png");
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px;
   transition: 0.4s ease-out; }
   .barraExclusiva .barra__ul {
-    padding-top: 50px;
     visibility: hidden; }
   .barraExclusiva .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraExclusiva .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -266,15 +258,13 @@ main {
 
 .barraExclusivaOnHover {
   background-color: #ca3225;
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 511px;
-  min-height: 498px; }
-  .barraExclusivaOnHover .barra__ul {
-    padding-top: 50px; }
+  max-width: 269px;
+  min-width: 269px;
+  max-height: 415px;
+  min-height: 415px; }
   .barraExclusivaOnHover .bottomCardExperiencias {
-    margin-top: 90px;
-    margin-left: 240px; }
+    margin-top: 65px;
+    margin-left: 200px; }
   .barraExclusivaOnHover .bottomCardExperiencias:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -289,7 +279,8 @@ main {
 
 .whatsapp-scrollBottom {
   margin-bottom: 120px;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  clear: left; }
 
 @media (max-width: 1200px) {
   .wp {
